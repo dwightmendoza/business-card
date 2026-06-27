@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="card">
+            <div class="oval-container">
+            <img class="avatar" src="IMG_0232.jpeg">
+            </div>
+            <div class="circle-container">
+  <svg viewBox="0 0 200 200" width="200" height="200">
+    <defs>
+      <!-- This defines the invisible circle path (Radius = 60, Center = 100,100) -->
+      <path id="textCircle" d="M 100, 100 m -60, 0 a 60,60 0 1,1 120,0 a 60,60 0 1,1 -120,0" />
+    </defs>
+    <!-- The text element links directly to the defined circle path -->
+    <text>
+      <textPath href="#textCircle" startOffset="0%">
+         Dwight Mendoza | Frontend Developer | Lakeland, FL | 
+      </textPath>
+    </text>
+  </svg>
+</div>
+        </div>
+    </body>
+</html>

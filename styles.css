@@ -1,0 +1,100 @@
+body {
+    margin: 20px;
+    /*
+    Challenge:
+    Find a web safe font you like, and add it 
+    to your card.
+    */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.oval-container {
+  width: 300px;           /* Horizontal diameter */
+  height: 200px;          /* Vertical diameter (unequal to width) */
+  border-radius: 50%;     /* Creates the oval curvature */
+  overflow: hidden;       /* Hides image portions outside the oval */
+}
+
+.oval-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      /* Prevents distortion by cropping to fit */
+}
+
+.avatar {
+    width: 150px;
+}
+
+/* Center the container on your screen */
+.circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  height: 100vh;
+  background-color: #ddebf8; /* Dark background */
+}
+
+/* Style the SVG and apply the continuous spin animation */
+.circle-container svg {
+  animation: spin 12s linear infinite; /* Adjust '12s' to change rotation speed */
+}
+
+/* Format the typography of the text inside the path */
+.circle-container text {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 12px;
+  font-weight: bold;
+  fill: #0f172a; /* Text color */
+  letter-spacing: 2px;
+}
+
+/* Hide the actual structural path lines so only the text is visible */
+#textCircle {
+  fill: none;
+  stroke: none;
+}
+
+/* Define the infinite 360-degree rotation */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.card {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: #ddebf8;
+    color: #2b2839;
+    border: 6px solid #d8cefe;
+        
+    /*
+    Challenge:
+    Find a color palette you like on Coolors.co
+    and use it in your business card.
+     */
+}
+
+.border-blue {
+    border: 1px dotted blue;
+}
+
+/*
+Stretch goals:
+Find other ways you can personalize 
+the design of your business card, e.g.:
+- change the border(s)
+- add border radius
+- shuffle the layout
+- shadows        🤯
+- hover effects  🤯🤯
+- animations     🤯🤯🤯
+*/
+
